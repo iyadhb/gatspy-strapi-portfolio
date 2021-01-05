@@ -6,7 +6,11 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import services from "../constants/services"
 export default () => {
-  return <Layout></Layout>
+  return <Layout>
+    <Hero />
+    <Services />
+  </Layout>
 }
 // ...GatsbyImageSharpFluid
