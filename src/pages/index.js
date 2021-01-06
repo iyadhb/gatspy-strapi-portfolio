@@ -13,7 +13,7 @@ export default ({data}) => {
     <Hero />
     <Services />
     <Jobs />
-    <Projects projects={projects} title="Featued Projects" showlink/>
+    <Projects projects={projects} title="Featued Projects" showLink/>
   </Layout>
 }
 export const query = graphql`
