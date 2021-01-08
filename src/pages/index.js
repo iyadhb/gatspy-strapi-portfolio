@@ -6,14 +6,17 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
-import services from "../constants/services"
+// import services from "../constants/services"
 export default ({data}) => {
-  const {allStrapiProjects:{nodes:projects}} = data
+  const {allStrapiProjects:{nodes:projects},
+  allStrapiBlogs:{nodes:blogs}
+} = data
   return <Layout>
     <Hero />
     <Services />
     <Jobs />
     <Projects projects={projects} title="Featued Projects" showLink/>
+    <Blogs blogs={blogs} title="blog" showLink />
   </Layout>
 }
 export const query = graphql`
