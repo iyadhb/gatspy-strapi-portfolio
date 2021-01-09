@@ -1010,7 +1010,7 @@ Blog Template
 }
 .blog-template ul,
 ol {
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
   margin-left: 2rem;
   display: inline-block;
 }
