@@ -1008,11 +1008,14 @@ Blog Template
 .blog-template h2 {
   text-align: center;
 }
-.blog-template ul {
-  margin-top: 2rem;
+.blog-template ul,
+ol {
+  /* margin-top: 2rem; */
+  margin-left: 2rem;
   display: inline-block;
 }
-.blog-template ul li {
+.blog-template ul li,
+ol li {
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
   padding: 0.5rem 1rem;
